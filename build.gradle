@@ -32,7 +32,16 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-codesqaud.web')
 	compile group: 'org.webjars', name: 'bootstrap', version: '3.3.7-1'
 	compile group: 'org.webjars.bower', name: 'jquery', version: '3.1.0'
+	compile "joda-time:joda-time:2.2"
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'Gradle Quickstart',
+				'Implementation-Version': version,
+				'Main-Class': 'codesquad.QnaJimmyApplication'
+	}
 }
