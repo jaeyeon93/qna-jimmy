@@ -16,7 +16,8 @@ public class UserController {
     public String create(User usr) {
         System.out.println("User : " + usr);
         users.add(usr);
-        return "index";
+        return "redirect:/list";
+        // redirect:/url로 이동을 하게된다.
         // static에 있는 index.html이 아니라, templates에 있는 index.html을 호출을 한다.
     }
 
