@@ -1,2 +1,6 @@
 *.xml
 *.iml
+*.class
+./gradle
+*.lock
+*.bin
